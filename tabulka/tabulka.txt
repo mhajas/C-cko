@@ -1,0 +1,4 @@
+SKUPINA,,,
+ovoce,jablko,hruska,slivovice
+zelenina,mrkev,zeli,paprika
+operacni system,DOS,Linux,BSD
