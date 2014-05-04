@@ -1,0 +1,2 @@
+datain.txt@dataout.txt:5
+
