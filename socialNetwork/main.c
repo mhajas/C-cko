@@ -23,6 +23,9 @@ Vypíše:
 
 Tomas Jedno = 2 (Michal Blazek, Martin Smrk)
 */
+/**
+ * autor: Michal Hajas
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
