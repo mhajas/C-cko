@@ -86,10 +86,10 @@ personNode* addPersonNode(personList* persons){
     newe->data= NULL;
     if(persons->start==NULL){
         persons->start= newe;
-        persons->end= newe;
     }else{
         persons->end->pNext= newe;
     }
+    persons->end= newe;
     return newe;
 }
 
