@@ -25,12 +25,12 @@ char* getLine(FILE* f){
         buffer[i]=c;
         i++;
     }
-    buffer= realloc(buffer, i+1);
-    buffer[i]='\0';
-    if(i==0){
+    if(c==EOF){
         free(buffer);
         return NULL;
     }
+    buffer= realloc(buffer, i+1);
+    buffer[i]='\0';
     return buffer;
 }
 /**
@@ -79,10 +79,12 @@ int main(int argc, char** argv){
     }
     char** records= NULL;
     int lines=0;
-    if((lines=readLinesToArray(f,&records))==0){
+    if((lines=readLinesToArray(stdin,&records))==0){
         return 1;
     }
-    printf("%s\n%s\n%s\n%s\n",records[0],records[1],records[2],records[3]);
+    for(int i=0;i<lines;i++){
+        printf("%s\n",records[i]);
+    }
     for(int i=0;i<lines;i++){
         free(records[i]);
     }
