@@ -1,0 +1,23 @@
+
+Program ziska klucove slova z textu.
+
+- slovo povazujeme za klucove, ak absahuje aspon 3 znaky
+- vstupny text nacitame zo suboru. Nazov suboru program ziska ako prvy argument programu.
+- slova su vo vstupnom subore oddelene prave jednou medzerou
+- vstupny text obsahuje vyhradne ascii znaky a nevyskytuje sa v nom ziadna interpunkcia
+
+- program vypise slova na stdout
+- klucove slova budu vypisane na vystupe kazde na jednom riadku spolu s ich pocetnostou
+- vstupny subor: input.txt
+
+- pamat alokujeme dynamicky, predpokl. lubovolny pocet slov lubovolnej dlzky
+- dbat na konvence, dobre prog. navyky, komentare, ziadne mem. leaky, fclose(), ...
+
+*1 - klucove slova budu na vyst. zoradene podla pocetnosti daneho kluc. slova, od najpocetnejsieho
+*2 - slova su na vstupe oddelene lubovolnym poctom bielych znakov
+*3 - vstupny text obsahuje interpunkciu
+*4 - vstupny subor: zadani.txt
+
+hints: strtok()
+
+* hints: isalpha(), qsort()
